@@ -1,0 +1,24 @@
+{
+  "name": "swiss-teletext-cli",
+  "version": "0.1.0",
+  "description": "A CLI viewer for Swiss television teletext pages from api.teletext.ch.",
+  "type": "module",
+  "bin": {
+    "teletext": "./bin/teletext.js",
+    "swisstxt": "./bin/teletext.js"
+  },
+  "scripts": {
+    "start": "node ./bin/teletext.js",
+    "test": "node --check ./bin/teletext.js"
+  },
+  "keywords": [
+    "teletext",
+    "swiss",
+    "cli",
+    "srf"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
