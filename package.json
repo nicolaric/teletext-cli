@@ -7,18 +7,38 @@
     "teletext": "./bin/teletext.js",
     "swisstxt": "./bin/teletext.js"
   },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "start": "node ./bin/teletext.js",
-    "test": "node --check ./bin/teletext.js"
+    "test": "node --check ./bin/teletext.js",
+    "prepublishOnly": "npm test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaric/teletext-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicolaric/teletext-cli/issues"
+  },
+  "homepage": "https://github.com/nicolaric/teletext-cli#readme",
   "keywords": [
     "teletext",
     "swiss",
+    "switzerland",
     "cli",
+    "terminal",
     "srf"
   ],
+  "author": "Nicola Richli",
   "license": "MIT",
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

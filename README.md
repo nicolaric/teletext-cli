@@ -2,17 +2,24 @@
 
 A small Node.js CLI for viewing Swiss television teletext pages from `api.teletext.ch`.
 
+## Install
+
+```bash
+npm install -g swiss-teletext-cli
+```
+
+This installs two commands: `teletext` and `swisstxt`.
+
 ## Usage
 
 ```bash
-node ./bin/teletext.js 113 --no-interactive
+teletext 113
 ```
 
-Or install/link it locally:
+Print one page and exit:
 
 ```bash
-npm link
-teletext 113
+teletext 113 --no-interactive
 ```
 
 Options:
@@ -35,6 +42,13 @@ n / Space    Next page
 p            Previous page
 r            Refresh
 q            Quit
+```
+
+## Development
+
+```bash
+npm test
+node ./bin/teletext.js 113 --no-interactive
 ```
 
 Requires Node.js 18+.
