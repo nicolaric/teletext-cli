@@ -4,8 +4,8 @@
   "description": "A CLI viewer for Swiss television teletext pages from api.teletext.ch.",
   "type": "module",
   "bin": {
-    "teletext": "./bin/teletext.js",
-    "swisstxt": "./bin/teletext.js"
+    "teletext": "bin/teletext.js",
+    "swisstxt": "bin/teletext.js"
   },
   "files": [
     "bin",
